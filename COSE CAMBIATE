@@ -1,0 +1,42 @@
+Certamente! Ecco l'elenco ordinato (in ordine alfabetico) e numerato di tutti i file che abbiamo lavorato, corretto o creato da zero finora, suddiviso per i vari livelli della tua architettura:
+
+### 1. CONTROL (Servlet)
+1. `AddProdotto.java` *(Adattato al polimorfismo e aggiunto campo Azienda)*
+2. `AddWishlistServlet.java` *(Nuovo - per la funzionalità Wishlist)*
+3. `AggiungiAlCarrello.java` *(Ottimizzate le query al DB)*
+4. `CarrelloServlet.java` *(Corretto il calcolo del totale in double)*
+5. `CreaOrdine.java` *(Sistemati i controlli di validazione ed estrazione dati)*
+6. `DeleteOrdineServlet.java` *(Ripristino quantità prodotti nel catalogo)*
+7. `DeleteProdotto.java` *(Gestione eccezioni migliorata)*
+8. `DeleteUser.java` *(Aggiunta l'invalidazione della sessione)*
+9. `DirectServlet.java` *(Gestione pulita del redirect Admin/Utente)*
+10. `ElencoServlet.java` *(Aggiornato con le nuove categorie)*
+11. `IndexServlet.java` *(Rimossi riferimenti vecchi, aggiunto caricamento catalogo in home)*
+12. `LeggiProdotti.java` *(Recupero pulito dell'intero catalogo)*
+13. `LogIn.java` *(Aggiunta creazione automatica del carrello se inesistente)*
+14. `LogOut.java` *(Semplificato e corretto)*
+15. `RemoveWishlistServlet.java` *(Nuovo - per la funzionalità Wishlist)*
+16. `ViewWishlistServlet.java` *(Nuovo - per la funzionalità Wishlist)*
+
+### 2. MODEL (Classi Java e DAO)
+1. `Carrello.java` *(Tipi ID riportati a int)*
+2. `CarrelloDAO.java` *(Allineato ai nuovi tipi di dato)*
+3. `ConPool.java` *(Aggiornato per puntare al DB `TheCaveOfGame`)*
+4. `Console.java` *(Nuovo - Sottoclasse di Prodotto)*
+5. `Gadget.java` *(Nuovo - Sottoclasse di Prodotto)*
+6. `LoggerObserver.java` *(Verificato e confermato)*
+7. `Ordine.java` *(Totale convertito in double)*
+8. `OrdineDAO.java` *(Corretti nomi colonne e query)*
+9. `ProdottiCarrello.java` *(Verificato e confermato)*
+10. `ProdottiCarrelloDAO.java` *(Rimossi Statement vulnerabili, aggiunti commit/rollback)*
+11. `Prodotto.java` *(ID in int, aggiunto campo Azienda)*
+12. `ProdottoDAO.java` *(Completamente riscritto con logica polimorfica e JOIN)*
+13. `ProdottoObservable.java` *(Verificato e confermato)*
+14. `ProdottoObserver.java` *(Verificato e confermato)*
+15. `User.java` *(Rimossa variabile ID inutile, Username è chiave primaria)*
+16. `UserDAO.java` *(Sistemate le query con Username e ripulito)*
+17. `Videogioco.java` *(Nuovo - Sottoclasse di Prodotto)*
+18. `WishlistDAO.java` *(Nuovo - Gestione DB per la lista desideri)*
+
+### 4. TEST
+1. *(Al momento non abbiamo ancora toccato file di Test come le classi JUnit. Se ne hai da aggiornare, possiamo farle subito!)*
